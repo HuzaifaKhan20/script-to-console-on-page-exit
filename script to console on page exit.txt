@@ -1,0 +1,9 @@
+const handleVisibilityChange = () => {
+    if (document.visibilityState === 'hidden'){
+        console.log('user left the page');
+        
+    }else {
+        console.log('user opened the page');
+    }
+        };
+document.addEventListener('visibilitychange', handleVisibilityChange);
